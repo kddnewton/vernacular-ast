@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'parser', '~> 2.4'
   spec.add_dependency 'racc', '~> 1.4'
-  spec.add_dependency 'vernacular', '~> 0.0'
+  spec.add_dependency 'vernacular', '~> 1.0'
 
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'minitest', '~> 5.10'
