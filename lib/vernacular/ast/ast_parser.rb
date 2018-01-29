@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Vernacular
   module AST
     # Handles monkeying around with the `parser` gem to get it to handle the
@@ -61,7 +63,7 @@ module Vernacular
         pattern = /\A\s+#{needle}/
 
         source.split("\n").each_with_object([]) do |line, edited|
-          if line =~ pattern
+          if line.match?(pattern)
             lhs, rhs = line.split(needle)
             edited << "#{lhs}#{needle} #{parser_extension.pattern}\n" \
                       "{\n#{parser_extension.code}\n}\n#{lhs}|#{rhs}"

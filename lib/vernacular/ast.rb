@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'parser'
 require 'tempfile'
 require 'vernacular'
@@ -10,6 +12,7 @@ require 'vernacular/ast/modifiers/typed_method_args'
 require 'vernacular/ast/modifiers/typed_method_returns'
 
 module Vernacular
+  # Extends Vernacular to support rewriting the AST
   module AST
     PARSER_PATH = File.expand_path('ast/parser.rb', __dir__).freeze
 

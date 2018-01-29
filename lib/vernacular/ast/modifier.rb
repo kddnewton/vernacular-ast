@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Vernacular
   module AST
     # Represents a modification that will be performed against the AST between

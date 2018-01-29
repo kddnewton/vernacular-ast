@@ -1,0 +1,9 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.5
+  Exclude:
+  - 'lib/vernacular/ast/parser.rb'
+  - 'test/typed_method_args_test.rb'
+  - 'test/typed_method_returns_test.rb'
+  - 'vendor/**/*'
