@@ -76,7 +76,12 @@ module Vernacular
 
       def parser_source
         filepath, = Parser.method(:check_for_encoding_support).source_location
-        File.read(File.expand_path('../../lib/parser/ruby25.y', filepath))
+        grammar_filepath = "../../lib/parser/ruby#{parser_version}.y"
+        File.read(File.expand_path(grammar_filepath, filepath))
+      end
+
+      def parser_version
+        @parser_version ||= RUBY_VERSION.gsub(/\A(\d)\.(\d).+/, '\1\2')
       end
 
       def write_parser(source)
