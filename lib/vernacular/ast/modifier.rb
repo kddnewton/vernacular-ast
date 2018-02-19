@@ -45,7 +45,7 @@ module Vernacular
       def modify(source)
         raise 'You must first configure a rewriter!' unless rewriter_block
 
-        rewriter = Class.new(Parser::Rewriter, &rewriter_block).new
+        rewriter = Class.new(Parser::TreeRewriter, &rewriter_block).new
         rewriter.instance_variable_set(:@parser, ASTParser.parser)
 
         buffer = Parser::Source::Buffer.new('<dynamic>')

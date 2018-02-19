@@ -75,8 +75,8 @@ module Vernacular
       # rubocop:enable Metrics/MethodLength
 
       def parser_source
-        filepath, = Parser.method(:check_for_encoding_support).source_location
-        grammar_filepath = "../../lib/parser/ruby#{parser_version}.y"
+        filepath, = Parser::Base.method(:parse).source_location
+        grammar_filepath = "../../parser/ruby#{parser_version}.y"
         File.read(File.expand_path(grammar_filepath, filepath))
       end
 

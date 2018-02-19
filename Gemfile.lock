@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    vernacular-ast (0.0.1)
-      parser (~> 2.4)
+    vernacular-ast (0.1.0)
+      parser (~> 2.5)
       racc (~> 1.4)
       vernacular (~> 1.0)
 
@@ -12,8 +12,8 @@ GEM
     ast (2.4.0)
     minitest (5.11.3)
     parallel (1.12.1)
-    parser (2.4.0.2)
-      ast (~> 2.3)
+    parser (2.5.0.0)
+      ast (~> 2.4.0)
     powerpack (0.1.1)
     racc (1.4.14)
     rainbow (3.0.0)
