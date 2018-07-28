@@ -26,7 +26,7 @@ module Vernacular
 
     Vernacular::BootsnapMixin.prepend(
       Module.new do
-        def input_to_storage(_, filepath)
+        def input_to_storage(_content, filepath)
           if filepath == PARSER_PATH
             raise ::Bootsnap::CompileCache::Uncompilable, "can't compile parser"
           end
