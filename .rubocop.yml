@@ -7,3 +7,7 @@ AllCops:
   - 'test/typed_method_args_test.rb'
   - 'test/typed_method_returns_test.rb'
   - 'vendor/**/*'
+
+Naming/FileName:
+  Exclude:
+  - vernacular-ast.gemspec
