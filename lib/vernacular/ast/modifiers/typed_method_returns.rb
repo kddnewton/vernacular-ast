@@ -45,8 +45,10 @@ module Vernacular
 
           def type_check_node_from(method_node)
             type_check_node = method_node.children[1].children.last
+
             return if !type_check_node ||
                       type_check_node.type != :type_check_arglist
+
             type_check_node
           end
 
