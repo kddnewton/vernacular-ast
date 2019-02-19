@@ -54,7 +54,9 @@ module Vernacular
         output = PARSER_PATH
         exec_path = Gem.activate_bin_path('racc', 'racc', [])
         `#{exec_path} --superclass=Parser::Base -o #{output} #{filepath}`
-        File.write(output, File.read(output).gsub('Ruby25', 'Vernacular'))
+
+        parser_name = "Ruby#{parser_version}"
+        File.write(output, File.read(output).gsub(parser_name, 'Vernacular'))
       end
 
       # rubocop:disable Metrics/MethodLength
