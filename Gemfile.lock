@@ -17,7 +17,7 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.2)
     psych (3.1.0)
-    racc (1.4.14)
+    racc (1.4.15)
     rainbow (3.0.0)
     rake (12.3.2)
     rubocop (0.65.0)
