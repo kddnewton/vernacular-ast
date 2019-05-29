@@ -1,6 +1,6 @@
 # Vernacular::AST
 
-[![Build Status](https://travis-ci.org/kddeisz/vernacular-ast.svg?branch=master)](https://travis-ci.org/kddeisz/vernacular-ast)
+[![Build Status](https://travis-ci.com/kddeisz/vernacular-ast.svg?branch=master)](https://travis-ci.com/kddeisz/vernacular-ast)
 [![Gem Version](https://img.shields.io/gem/v/vernacular-ast.svg)](https://rubygems.org/gems/vernacular-ast)
 
 Extends `Vernacular` to support rewriting the AST.
